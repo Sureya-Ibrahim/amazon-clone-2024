@@ -74,6 +74,7 @@ const Payment = () => {
       dispatch({ type: Type.EMPTY_BASKET });
 
       setProcessing(false);
+      
       navigate("/orders", { state: { msg: "you have placed new Order" } });
     } catch (error) {
       console.log(error);
